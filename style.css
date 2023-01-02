@@ -1,0 +1,28 @@
+body{
+    height: 100vw;
+    width: 100vh;
+}
+
+
+#map{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  .spinner-img {
+    width: 500px;
+    height: 500px;
+  }
+  

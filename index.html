@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang ="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Google Maps search</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+  <h1>Google Map API test</h1>
+  <hr>
+  <form>
+  <label for="city">City:</label><br>
+  <input type="text" id="city" name="city"><br>
+  <label for="country">Country:</label><br>
+  <input type="text" id="country" name="country"><br><br>
+  <button type="button" onclick="showCityOnMap()">Show on map</button>
+</form> 
+
+  <div id="map"></div>
+  
+  <div class="spinner">
+    <img src="spinner.gif" class="spinner-img" alt="Loading spinner">
+  </div>
+  
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPLgDIjY-co7xp67ugYnairxSVBToZE6U&callback=initMap&v=weekly"
+  async
+  ></script>  <!-- Move the script element after the map element -->
+
+</body>
+
+</html>
